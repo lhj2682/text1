@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poongsan</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/com.css" >
+    <link rel="stylesheet" href="./js/js/aos.css">
+        
+    
+    <script src="./js/js/jquery-3.7.1.js"></script> 
+    <script src="./js/js/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+   
+</head>
+<body>
+    
+    <header>
+        <div class="h_wrap">
+        <h1><img src="./images/logo.png"></h1>
+        <nav>
+            <h1><img src="./images/logo.png"></h1>
+            <!--검은색안 로고-->
+
+            <button class="close">
+                <a href="#">
+                    <img src="./images/x.png">
+                </a>
+            </button><!--검은색안 메뉴close박스-->
+                     
+            <ul class="util">
+                
+                <li><a href="#">WHO WE ARE</a>
+                    <a href="#" class="arrow_pc">
+                        <!-- <img src="images/arrow_white.png" >                       -->
+                    </a>
+                
+                    <ul class="sub">
+
+                        <li><a href="#">
+                            <p>개요</p>
+                           
+                        </li><!--개요-->
+                        <li><a href="#">
+                            <p>CEO</p>
+                            
+                        </li><!--CEO-->
+                        <li><a href="#">
+                            <p>연혁</p>
+                       
+                        </li><!--연혁-->
+                        <li><a href="#">
+                            <p>관계사</p>
+                          
+                        </li><!--관계사-->
+                        <li><a href="#">
+                            <p>주소</p>
+                            </a>
+                        </li><!--주소-->
+                    </ul><!--sub-->
+                </li><!--WHO WE ARE-->
+
+                <li><a href="#">CULTURE</a>
+                    <a href="#" class="arrow_pc">
+                        <!-- <img src="images/arrow_white.png" >                       -->
+                    </a>
+                
+                    <ul class="sub">
+                        <li><a href="#">
+                            <p>동문화</p>
+                        </a>
+                        </li><!--동문화-->
+
+                        <li><a href="#">
+                            <p>동의특징</p>
+                        </a>
+                        </li><!--동의특징-->
+
+                        <li><a href="#">
+                            <p>동의가치</p>
+                        </a>
+                        </li><!--동의가치-->
+
+                        <li><a href="#">
+                            <p>동과생활</p>
+                        </a>
+                        </li><!--동과생활-->
+                    </ul><!--sub-->
+                </li><!--OUR CULTURE-->
+
+
+                <li><a href="#">WHAT WE DO</a>
+                    <a href="#" class="arrow_pc">
+                        <!-- <img src="images/arrow_white.png" >                       -->
+                    </a>
+                
+                    <ul class="sub">
+                        <li><a href="#">
+                            <p>압연사업</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>동사업</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>소전사업</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>스테인리스</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>특수업</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>정밀단조품</p>
+                        </a></li>
+
+                    </ul><!--sub-->                
+                </li><!--WHAT WE DO-->
+
+                <li><a href="#">IR</a>
+                    <a href="#" class="arrow_pc">
+                        <!-- <img src="images/arrow_white.png" >                       -->
+                    </a>
+                
+                    <ul class="sub">
+                        <li><a href="#">
+                            <p>지배구조</p>
+                        </a></li>
+                        <li><a href="#">
+                            <p>주주정보</p>
+                        </a></li>
+                        <li><a href="#">
+                            <p>재무정보</p>
+                        </a></li>
+                    </ul>           
+            
+                </li><!--IR-->
+
+                <li><a href="#">ESG</a>
+                    <a href="#" class="arrow_pc">
+                        <!-- <img src="images/arrow_white.png" >                       -->
+                    </a>
+                
+                    <ul class="sub">
+                        <li><a href="#">
+                            <p>윤리경영</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>안전보건환경</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>동반성장</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>사회공헌</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>ESG평가결과</p>
+                        </a></li>
+
+                    </ul><!--sub-->
+
+
+                </li><!--ESG-->
+
+                <li><a href="#">CAREER</a>
+                    <a href="#" class="arrow_pc">
+                        <!-- <img src="images/arrow_white.png" >                       -->
+                    </a>
+                
+                    <ul class="sub">
+                        <li><a href="#">
+                            <p>인사정보</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>복지제도</p>
+                        </a></li>
+
+                        <li><a href="#">
+                            <p>인재육성</p>
+                        </a></li>
+
+                    </ul><!--sub-->
+                </li><!--CAREER-->
+
+            </ul><!--util-->
+        
+            
+        </nav>
+        <div class="bg"></div><!--bg-->
+       
+        <button class="gnb">
+            <a href="#">
+            <div></div>
+            <div></div>
+            <div></div>
+            </a>            
+        </button><!--gnb메뉴박스-->
+    </div><!--h_wrap-->
+    </header>
+    <!--헤더끝-->
+    <main>
+        <div class="main1 item1">
+            <img src="./images/main1.jpg" class="pc">
+            <img src="./images/main1_mo copy.jpg" class="mo">
+            <div class="text">
+            <h3>WHO WE ARE</h3>
+            <h2>우리만의 독자적 기술력으로<br>
+            더나은 미래를 향해 나아갑니다</h2>
+            <ul>
+                <li>
+                    <a href="#">사업소개
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">사업현황
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">풍산Way
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+
+            </ul>
+            </div><!--text-->            
+
+
+        </div><!--main1-->
+        <div class="main2 item1">
+            <img src="./images/main2.jpg" class="pc">
+            <img src="./images/main2.jpg" class="mo">
+            <div class="text">
+            <h3>OUR CULTURE</h3>
+            <h2>인류문명의 동반자<br>
+            銅</h2>
+            <ul>
+                <li>
+                    <a href="#">동의특징
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">동의가치
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">동과생활
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+
+            </ul>
+        </div><!--text-->
+
+        </div><!--main2-->
+        <div class="main3 item1">
+            <!-- <div data-aos="flip-up"> -->
+            <img src="./images/main3.jpg" class="pc">
+            <img src="./images/main3_mo copy.jpg" class="mo">
+            <div class="text">
+            <h3>WHAT WE DO</h3>
+            <h2>우리의 로드맵을<br>
+            소개합니다</h2>
+            <ul>
+                <li>
+                    <a href="#">압연사업
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">동관사업
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">특수사업
+                        <!-- <img src="./images/arrow.png"> -->
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </div><!--text-->
+    <!-- </div> -->
+
+        </div><!--main3-->
+        <div class="main4 item1">
+             
+            <img src="./images/main4_1 copy.jpg" class="pc">
+            <img src="./images/main4_mo copy.jpg" class="mo">
+            
+            <div class="text">
+                <h3>ESG</h3>
+                <h2>나은 미래를 꿈꿉니다</h2>
+            </div><!--text-->
+
+            <div class="container">
+                <div class="box box1">
+                    <a href="#" class="conn">
+                        <img src="./images/con4.svg">
+                        <p>기업윤리</p>
+                    </a>
+                    
+                </div><!--box1-->
+
+                <div class="box box2">
+                    <a href="#" class="conn"> 
+                        <img src="./images/con2.svg">
+                        <p>사회공헌</p>
+                    </a>
+                   
+                </div><!--box2-->
+
+                <div class="box box3" class="conn">
+                    <a href="#">
+                        <img src="./images/con3.svg">
+                        <p>동반선장</p>
+                    </a>
+                   
+                </div><!--box3-->
+
+
+                <div class="box box4" class="conn">
+                    <a href="#">
+                        <img src="./images/con4.svg">
+                        <p>ESG</p>
+                    </a>
+                   <!--box4-->
+
+            </div><!--container-->  
+        
+        </div><!--main4-->
+    </main>
+    <section class="news">
+        <h2>News & Media</h2>
+        <div>
+        <div class="new1">
+
+            <a href="#">
+                <h5>news</h5>
+                <p>부산 '센텀2지구 첨단산업
+                    급물살, 풍산 부지 이전확정 주민들의 반대
+                </p>
+                <span>2024-02-20</span>
+                <div class="pic">
+                    <img src="./images/new1.jpg"></div>
+            </a>
+
+        </div><!--new1-->
+        <div class="news2">
+
+            <a href="#">
+                <h5>news</h5>
+                <p>부산 '센텀2지구 첨단산업
+                    급물살, 풍산 부지 이전확정 주민들의반발은!
+                </p>
+                <span>2024-02-20</span>
+                <div class="pic"><img src="./images/new2.jpg"></div>
+            </a>
+
+        </div><!--news2-->
+        <div class="news3">
+
+            <a href="#">
+                <h5>news</h5>
+                <p>부산 '센텀2지구 첨단산업
+                    급물살, 풍산 부지 이전확정 반대시위
+                </p>
+                <span>2024-02-20</span>
+                <div class="pic"><img src="./images/news3.jpg"></div>
+            </a>
+
+        </div><!--news3-->
+        <div class="news4">
+
+            <a href="#">
+                <h5>news</h5>
+                <p>"방산 수주 늘어날 것"
+                    …풍산, 증권가 호평에 52주 신고가
+                </p>
+                <span>2024-02-20</span>
+                <div class="pic"><img src="./images/news4.jpg"></div>
+            </a>
+
+        </div><!--news4-->
+    </div><!--타이틀빼고사진3개-->
+    </section><!--news-->
+    <!--news전체끝-->
+
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <p>지속가능한 성장을 함께하는 우리의 파트너들</p>
+        <div class="row">
+        <div class="row1">
+            <img src="./images/p1.jpg">
+            <img src="./images/p2.jpg">
+            <img src="./images/p3.jpg">
+            <img src="./images/p4.jpg">
+            <img src="./images/p5.jpg">
+            <img src="./images/p6.jpg">
+            <img src="./images/p7.jpg">
+            <img src="./images/p8.jpg">
+            <img src="./images/p9.jpg">
+            <img src="./images/p10.jpg">       
+       
+        
+        </div><!--row1-->
+        <div class="row2">
+            <img src="./images/p1.jpg">
+            <img src="./images/p2.jpg">
+            <img src="./images/p3.jpg">
+            <img src="./images/p4.jpg">
+            <img src="./images/p5.jpg">
+            <img src="./images/p6.jpg">
+            <img src="./images/p7.jpg">
+            <img src="./images/p8.jpg">
+            <img src="./images/p9.jpg">
+            <img src="./images/p10.jpg">
+          
+
+        </div><!--row2-->
+    </div><!--row-->
+
+    <div class="row_second">
+        <div class="row1">
+            <img src="./images/p1.jpg">
+            <img src="./images/p2.jpg">
+            <img src="./images/p3.jpg">
+            <img src="./images/p4.jpg">
+            <img src="./images/p5.jpg">
+            <img src="./images/p6.jpg">
+            <img src="./images/p7.jpg">
+            <img src="./images/p8.jpg">
+            <img src="./images/p9.jpg">
+            <img src="./images/p10.jpg">          
+       
+        
+        </div><!--row1-->
+        <div class="row2">
+            <img src="./images/p1.jpg">
+            <img src="./images/p2.jpg">
+            <img src="./images/p3.jpg">
+            <img src="./images/p4.jpg">
+            <img src="./images/p5.jpg">
+            <img src="./images/p6.jpg">
+            <img src="./images/p7.jpg">
+            <img src="./images/p8.jpg">
+            <img src="./images/p9.jpg">
+            <img src="./images/p10.jpg">
+          
+
+        </div><!--row2-->
+        </div><!--row_second-->
+    </div><!--row-->
+
+
+    </section><!--partners-->
+    <!--parters끝-->
+	<footer class="item" data-aos="fade-up">
+        <h1>CONTACT US</h1>
+    
+    <div class="f_wrap"><!--flex하려고만듬-->
+        <div class="info">
+            <div class="left">
+            <ul>
+                <li>
+                    <p>TEL</p>
+                    <SPAN>+82-2-3455-5566</SPAN>
+                </li>
+                <li>
+                    <p>FAX</p>
+                    <SPAN>+82-2-3455-5566</SPAN>
+                </li>
+                    <p>E-MAIL</p>
+                    <SPAN>POONGSAN@co.kr</SPAN>
+                </li>
+                <li>
+                    <p>ADDRESS</p>
+                    <address>서울시 마포구 성미산로80, 상하빌딩</address>
+                </li>
+            </ul>
+        </div><!--left-->
+            
+        </div><!--info-->
+        <div class="map"><!--그림감싸는-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.744279513722!2d126.95811858995098!3d37.56108819994734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e4b2db2f41%3A0xe9ba12ee81c0027b!2zKOyjvCntko3sgrA!5e0!3m2!1sko!2skr!4v1712121799442!5m2!1sko!2skr" 
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div><!--그림감싸는-->
+    </div>
+        <div class="copy">
+            Copyright idus Co., Ltd.All rights reserved.
+        </div><!--copy-->
+    
+    </footer>
+
+
+    <script>
+
+        AOS.init();
+
+        const panel=document.querySelector("main")
+        gsap.utils.toArray(".item1").forEach((panel, i)=>{
+    ScrollTrigger.create({
+        trigger:panel,
+        start:"top top",
+        pin:true,
+        pinSpacing:false
+    })
+
+})
+    </script>    
+    
+    
+</body>
+</html>

@@ -1,0 +1,512 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+ul li{list-style: none;}
+a{text-decoration: none;color:inherit}
+body{
+    width: 100%;
+    height: 100vh;
+   
+}
+header{  
+    width: 100%;
+    height: 70px;  
+    z-index:10;
+    position: fixed;
+    top:0; left:0;     
+}
+
+.h_wrap{
+    position: relative;
+}
+.h_wrap>h1{
+    position: fixed;
+    padding-top: 15px;
+    padding-left: 10px;
+   }
+
+/*모바일 검은색메뉴*/
+nav{
+    position: fixed;
+    top:0px; left:-100%; 
+     width: 100%;
+     height: 100vh;
+     background-color: #222;
+     color:white;   
+     font-weight: bold;  
+     transition: all 0.3s;
+     z-index:900;
+   
+ }
+ 
+ nav>ul{
+     line-height:1.7em;
+     margin-top: 70px;
+    
+ }
+ .util>li{
+     
+    margin: auto;
+     width: 90%;
+     line-height: 4em;
+ }
+ 
+ .sub li {
+     border-bottom: none;
+     display: flex;
+     width: 100%;
+     height: 50px;
+     z-index:500; 
+      
+ }
+ .sub li p{
+     width: 100px;
+     font-size: 14px;
+     font-weight: normal;
+     line-height: 14px;
+     text-align: center;    
+ }
+ .util li{
+     position: relative;
+ }
+ .util .sub{
+     display: none;
+     border-bottom: none;    
+ }
+ .util .sub li{
+     display: flex;
+     margin-left: 120px;
+ }
+ .util>li:hover::after{/*li한테 호버하면 after실행*/
+    width: 100%;
+ 
+}
+
+.util img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:20px; right:0;
+}
+/*on클래스*/
+.util li.on{
+    font-weight: 900;   
+  
+    
+
+}
+.util .sub li.on{
+       font-weight: bold;
+    border-bottom:none;
+    font-weight: normal;  
+      
+}
+
+/*모바일 열고닫기 .gnb/.close*/
+.close img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:20px; right: 20px;
+}
+
+.gnb{
+    width: 30px;height: 30px;
+    background-color: transparent;
+    border: 0;
+    
+    position: absolute;
+    top:20px; right: 10px;
+}
+.gnb div{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(252, 250, 250);
+    margin-bottom:7px;
+}
+
+/*********************************************/
+.img img{
+    width: 100%;
+    height: 100px;
+}
+ul li.on{
+    background-color:#222;
+    color: white;
+
+}/*제이쿼리에서 addClass를이용하여 클래스명달때에는
+띄어쓰기없이 .클래스명을 적어줘야함*/
+section{
+    max-width: 1080px;
+    margin: 0 auto;
+    color:#222;
+
+}
+section ul{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+     font-size: 20px;
+  
+}
+section ul li{
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #888;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    }
+.con>div{
+    display: none;
+}
+.con .box1{
+    display: block;
+}
+.pic{
+    text-align: center;  
+   }
+.pic img{
+    border-radius: 10px;
+}
+.txt{
+    
+    font-size: 12px;
+    padding: 30px;
+}
+/*box2시작*/
+hr{
+    display: none;
+}
+h2{
+    text-align: center;
+   
+}
+.box2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+.box2 span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.box2 img{
+    text-align: center;
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;  
+}
+.box2 span{
+    padding: 20px;
+}
+.box2>img:hover{
+    
+    scale: 1.1;
+    transition: all 1s;
+}
+.box2 div{
+    margin-bottom: 50px;
+
+}
+/********주소*********************/
+.box3{
+ 
+     
+}
+
+.box3>div{
+    width: 90%;
+  margin:0 auto;
+    height: 450px;
+    overflow: hidden;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 10px rgba(0,0,0)    
+
+}
+
+.iframe{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.map{
+    text-align: center;
+}
+.text{
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+   
+}
+.text p{
+    font-size: 15px;
+    font-weight: bold;
+    margin:0;
+}
+.text span{
+    color:#444;
+    font-size: 13px;
+}
+.box3 div .map{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+.box3 div .map img{
+    width: 100%;
+    height: 100%;
+}
+.box3 div text{
+    height: 20%;
+    background-color: whitesmoke;
+}
+.box3 div:hover img{
+    transition: 1s;
+    transform: scale(1.2);
+}
+/*******푸터*********************/
+.item{  
+    width: 100%;
+   height: 100vh;
+   background-color: #333;
+}
+
+.item h1{   
+   text-align: center;
+   font-size: 70px;
+   color:white;
+   padding-top: 90px;
+   box-sizing: border-box;
+}
+.map{
+   width: 100%;
+   height: 450px;
+   overflow: hidden;
+   position: relative;
+
+}
+.map iframe{
+   position: absolute;
+   left:0; bottom:0;	
+}
+.info{
+   color:white;
+   text-align: center;
+}
+.info p{
+   font-size: 24px;
+   font-weight: bold;
+   padding: 10px;
+   box-sizing: border-box;
+}
+.info span{
+   color: #999;
+   font-size: 18px;
+}
+address{
+   font-style: normal;
+   color: #999;
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+.copy{
+   text-align: center;
+   color:#999;
+   font-style: italic;
+   padding: 10px;
+   box-sizing: border-box;
+}
+    
+
+@media all and (min-width:834px){
+    header{
+        width: 100%;
+       
+    }
+/*태블릿 검은색 메뉴시작*/
+/* header h1{z-index: 999;} */
+nav{
+    display: block;   
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top:0; left:0;
+    background-color: transparent;
+    
+   
+      }
+nav ul{
+    margin-top: 0;
+}
+nav h1 img{
+    display: none;
+}
+.bg{
+    width: 100%;
+    height: 350px;
+    display: none;
+    background-color:pink;
+   
+}
+.util{   
+    display: flex;
+    margin-top: 0px;
+    margin-left: 150px;
+    font-size: 16px;   
+}
+.util li{
+    font-size: 15px;
+    width: 100%;
+   display: block;
+    text-align: center;
+    margin-right: 2px;  
+}
+.util .sub{   
+    width: 100%;
+    height: 400px;
+   /* display: none; */
+    text-align: center;
+    margin-top: 10px;  
+    line-height: 15px;
+ }
+.util .sub li{
+    margin-left: 0;   
+    display: unset; 
+  }
+.util .sub li p:hover{
+    font-weight: bold;
+    font-size: larger;
+}
+.sub li p{
+    width: 100%;   
+    margin-top: 15px;
+}
+.util .arrow_pc img{
+    display: none;
+}
+.close{
+    display: none;
+}
+
+.gnb{
+    display: none;
+} 
+
+
+
+
+
+
+
+
+
+ /*************************************/   
+.box2{
+    width: 100%;
+    height: 700px;  
+    padding: 25px;
+    box-sizing: border-box;
+
+}
+.box2>div{
+    width: 47%;
+    height: 350px;
+    float: left;
+    margin-right: 28px;
+}
+.box2>div:nth-child(2n){
+    margin-right: 0;
+}
+.box2>div::after{
+    display: block;
+    content: '';
+    clear:both
+
+}
+
+
+
+/******box2경영이념 끝************/
+
+.box3{
+    width: 100%;
+    height: 1500px;  
+    padding: 25px; 
+    box-sizing: border-box;
+
+}
+.box3>div{
+    width: 47%;
+    height: 450px;
+    float: left;
+    margin-right: 28px;
+}
+  
+.box3>div:nth-child(2n){
+    margin-right: 0;
+}
+
+
+.box>div::after{
+    display: block;
+    content: '';
+    clear:both
+
+}
+/**********태블릿푸터**********************/
+.item .f_wrap{display: flex;
+    justify-content: space-between;}
+.item h1{
+        font-size: 120px;
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+    
+    .map{
+        width: 70%;
+        height: 75vh;
+        overflow: hidden;
+        border-top-left-radius: 100px;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .info{
+        width: 30%;
+        position: relative;
+        
+    }
+    .info .left{
+        width: 80%;
+        position: absolute;
+        left:50%; top:50%;
+        transform: translate(-50%,-50%);
+    }
+    .copy{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}/*태블릿끝*/
+

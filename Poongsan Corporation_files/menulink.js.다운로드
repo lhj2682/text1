@@ -1,0 +1,19 @@
+function menulink(pageNum,subNum1,subNum2,subNum3){
+	if(pageNum!=undefined){
+		if(pageNum=='home'){
+			location.href="./main.php";	
+		}else{
+			location.href="sub.php?pageNum="+pageNum;	
+		}
+
+		if(subNum1!=undefined){
+			location.href="sub.php?pageNum="+pageNum+"&subNum1="+subNum1;
+			if(subNum2!=undefined){
+				location.href="sub.php?pageNum="+pageNum+"&subNum1="+subNum1+"&subNum2="+subNum2;
+				if(subNum3!=undefined){
+					location.href="sub.php?pageNum="+pageNum+"&subNum1="+subNum1+"&subNum2="+subNum2+"&subNum3="+subNum3;
+				}
+			}
+		}
+	}
+}

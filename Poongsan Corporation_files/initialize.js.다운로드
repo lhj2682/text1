@@ -1,0 +1,27 @@
+$(document).ready(function(){
+	$('#select-company-menu').sSelect();
+	$("#slideshow").cycle({
+		fx:     'fade',
+		speed:  900,
+		timeout: 3500,
+		pager:  '#slideshow-nav',
+		pause:	1
+	});	
+	
+	$('.play').click(function() {
+		$('#slideshow').cycle('resume');
+		$(this).addClass("activeSlide");
+		$('.pause').removeClass("activeSlide");
+		return false;
+	});	
+
+	$('.pause').click(function() {
+		$('#slideshow').cycle('pause');
+		$(this).addClass("activeSlide");		
+		$('.play').removeClass("activeSlide");		
+		return false;
+	});	
+
+	// setInnerCorner
+	$('[data-set-inner-corner]').corner("round 8px").parent().css('padding', '2px').corner("round 10px");
+});
